@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+        body{
+             background-color: black;
+        }
+
+
+    </style>
+</head>
+<body>
+    
+
+    <img src="./images/sponge.gif" id="sponge" alt="">
+
+
+    <script>
+        var elem = document.querySelector("#sponge");
+
+        elem.animate([
+            {transfrom:'translate(0,50px)'},
+            {transfrom:'translate(800px,200px)'},
+            {transfrom:'translate(0,50px)'}
+        ],{
+            duration:4000,
+            iterations:Infinity
+        })
+    </script>
+</body>
+</html>
